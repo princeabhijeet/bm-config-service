@@ -1,2 +1,2 @@
 # bm-config-service
-@EnableConfigServer | Netflix Config Server
+@EnableConfigServer | Spring Cloud Config Server
