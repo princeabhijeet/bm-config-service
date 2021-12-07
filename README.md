@@ -1,2 +1,2 @@
 # bm-config-service
-Microservice: Config Service
+@EnableConfigServer | Spring Cloud Config Server
