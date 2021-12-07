@@ -1,0 +1,9 @@
+
+
+	Microservice	:	bm-config-service
+	Spring Boot     :	${spring-boot.formatted-version}	
+	
+	Description     :		Spring Cloud Config Server 	- 	Central management for configuration via Git, SVN, or HashiCorp Vault
+                        	Spring Cloud Netflix Eureka Client 	- 	A REST based service for locating services for the purpose of load balancing and failover of middle-tier servers
+						
+
