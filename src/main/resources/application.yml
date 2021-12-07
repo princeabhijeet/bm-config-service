@@ -1,0 +1,43 @@
+# bm-config-server
+
+server:
+  port: 8888
+ 
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations:
+          - classpath:/configuration
+ 
+eureka: 
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 10
+    instance-info-replication-interval-seconds: 10
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+      
+      
+#       <Property>                                             : <Default>   :           <Description>
+# eureka.client.fetch-registry                                 : true        : Indicates whether this client should fetch eureka registry information from eureka server
+# eureka.client.register-with-eureka                           : true        : Indicates whether or not this instance should register its information with eureka server for discovery by others
+# eureka.client.registry-fetch-interval-seconds                : 30          : Indicates how often (in seconds) to fetch the registry information from the eureka server
+# eureka.client.instance-info-replication-interval-seconds     : 30          : Indicates how often (in seconds) to replicate instance changes to be replicated to the eureka server
+# eureka.client.service-url                                    : NA          : Map of availability zone to list of fully qualified URLs to communicate with eureka server. 
+#                                                                              Each value can be a single URL or a comma separated list of alternative locations. 
+#                                                                              Typically the eureka server URLs carry protocol,host,port,context and version information if any. 
+#                                                                              Example: http://ec2-256-156-243-129.compute-1.amazonaws.com:7001/eureka/. 
+#                                                                              The changes are effective at runtime at the next service url refresh cycle as specified by eurekaServiceUrlPollIntervalSeconds.
+
+
+
+
+
+
+
