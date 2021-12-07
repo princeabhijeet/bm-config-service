@@ -1,5 +1,6 @@
 # bm-config-server
 
+
 server:
   port: 8888
  
@@ -11,7 +12,7 @@ spring:
       server:
         native:
           search-locations:
-          - classpath:/configuration
+          - classpath:/configuration  application:    name: bm-config-service
  
 eureka: 
   client:
