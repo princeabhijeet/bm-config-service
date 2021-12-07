@@ -13,7 +13,8 @@ spring:
       server:
         native:
           search-locations:
-          - classpath:/configuration  
+            - classpath:/configuration
+            - classpath:/configuration/bm-gateway-service  
  
 eureka: 
   client:
