@@ -1,4 +1,4 @@
-package com.prince.ms.configservice;
+package com.prince.ms.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
